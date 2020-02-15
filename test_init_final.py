@@ -1253,14 +1253,14 @@ while True:
 
 			for i in range(bossNum):
 				################ 보스 컷처리 ################ 
-				if message.content.startswith(bossData[i][0] +'컷'):
+				if message.content.startswith(bossData[i][0] +' 컷'):
 					if hello.find('  ') != -1 :
 						bossData[i][6] = hello[hello.find('  ')+2:]
 						hello = hello[:hello.find('  ')]
 					else:
 						bossData[i][6] = ''
 						
-					tmp_msg = bossData[i][0] +'컷'
+					tmp_msg = bossData[i][0] +' 컷'
 					if len(hello) > len(tmp_msg) + 3 :
 						if hello.find(':') != -1 :
 							chkpos = hello.find(':')
